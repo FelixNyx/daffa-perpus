@@ -1,0 +1,305 @@
+/* start style index */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:focus {
+    color: white; /* Mengubah warna teks saat hover */
+}
+
+/* Banner Styles */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/backgroundPerpus.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    animation: fadeInDown 2s ease-in-out;
+}
+
+.banner p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.banner img {
+    margin-top: 1rem;
+    width: 200px;
+    height: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner .btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.banner .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Wave Animation */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('wave.svg') repeat-x;
+    animation: waveAnimation 10s linear infinite;
+}
+
+@keyframes waveAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* end style index */
+
+/* Navbar Styles */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #997C70;
+}
+
+.navbar-toggler {
+    border: none; /* Hilangkan border toggle */
+    margin-left: auto; /* Geser tombol toggle ke kanan */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Warna teks navbar */
+}
+
+.navbar-nav .nav-link:hover {
+    color: black; /* Warna teks saat hover */
+}
+
+/* Dropdown Menu Styling */
+@media (max-width: 992px) {
+    /* Tampilan mobile */
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        width: 100%; /* Lebar penuh */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0; /* Jarak antar menu */
+    }
+
+    .btn-outline-dark {
+        width: 100%; /* Tombol Login penuh */
+        text-align: center;
+    }
+
+    /* Tombol Login desktop tidak terlihat di mobile */
+    .d-lg-block {
+        display: none !important;
+    }
+}
+
+/* end navbar style */
+
+/* Hover effect on cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for title and cards */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.card-animate {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.card-animate:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.card-animate:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.card-animate:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.card-animate:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.card-animate:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+.card-animate:nth-child(6) {
+    animation-delay: 1.8s;
+}
+
+.container {
+    max-width: 1200px; /* Batas lebar kontainer */
+    padding: 20px; /* Padding untuk margin dalam */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+}
+
+/* Footer container */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer content container */
+.footer .container-footer {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+}
+
+/* Footer text styles */
+.footer p {
+    margin: 0;
+    color: white;
+}
+
+/* Social media icons styling */
+.footer .social-icons {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for social media icons */
+.footer .social-icons a:hover {
+    color: #f8f9fa; /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+}
+
+/* Footer responsiveness for mobile screens */
+@media (max-width: 767px) {
+    .footer p {
+        font-size: 14px;
+    }
+    .footer .social-icons a {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .footer .container-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer .social-icons {
+        text-align: center; /* Center the icons on small screens */
+        margin-top: 15px;
+    }
+}
+

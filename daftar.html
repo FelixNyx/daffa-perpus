@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daftar Buku</title>
+    <link rel="icon" href="./img/logoPerpus.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/daftar.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #997C70;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand nav-link disabled" href="#">
+                <img src="./img/logoPerpus.png" alt="Logo Perpus" style="height: 40px;">
+            </a>
+            <!-- Tombol Hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu Navigasi -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./beranda.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./daftar.html">Daftar Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./transaksi.html">Transaksi</a>
+                    </li>
+                    <li class="nav-item d-lg-none">
+                        <a href="./login.html" class="btn btn-outline-dark w-100">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tombol Login untuk Desktop -->
+            <form class="d-none d-lg-block">
+                <a href="./login.html" class="btn btn-outline-dark">Login</a>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Daftar Buku Section -->
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h1>Daftar Buku</h1>
+            <p class="text-muted">Temukan koleksi buku yang tersedia di perpustakaan kami.</p>
+        </div>
+
+        <div class="row">
+            <!-- Book Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./img/hujan-tereliye.jpg" class="card-img-top" alt="Book 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Hujan</h5>
+                        <p class="card-text">Menceritakan kisah cinta, persahabatan, dan perjuangan hidup di masa depan.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal1">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Buku 1 -->
+            <div class="modal fade" id="bookModal1" tabindex="-1" aria-labelledby="bookModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel1">Hujan</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/hujan-tereliye.jpg" class="img-fluid" alt="Book Image">
+                            <h4>Deskripsi Buku</h4>
+                            <p>Tentang kehilangan dan bagaimana seseorang dapat bangkit kembali dari keterpurukan. Lail, tokoh utama, mengalami kehilangan yang sangat besar ketika orang tuanya meninggal dunia akibat bencana alam.</p>
+                            <h5>Pengarang: Tere Liye</h5>
+                            <h5>Penerbit: PT Gramedia Pustaka Utama</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./img/LAUT_BERCERITA.jpg" class="card-img-top" alt="Book 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Laut Bercerita</h5>
+                        <p class="card-text">Menceritakan kisah perjuangan aktivis mahasiswa dalam melawan kediktatoran Orde Baru.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal2">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Buku 2 -->
+            <div class="modal fade" id="bookModal2" tabindex="-1" aria-labelledby="bookModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel1">Laut Bercerita</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/LAUT_BERCERITA.jpg" class="img-fluid" alt="Book Image">
+                            <h4>Deskripsi Buku</h4>
+                            <p>tentang kisah keluarga yang kehilangan, sekumpulan sahabat yang merasakan kekosongan di dada, sekelompok orang yang gemar menyiksa dan lancar berkhianat, sejumlah keluarga yang mencari kejelasan makam anaknya, dan tentang cinta yang tak akan luntur.</p>
+                            <h5>Pengarang: Leila S. Chudori</h5>
+                            <h5>Penerbit: Kepustakaan Populer Gramedia (KPG) Jakarta</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./img/siJuki.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Si Juki</h5>
+                        <p class="card-text">komik bergenre komedi yang diciptakan oleh Faza Ibnu Ubaidillah, yang lebih dikenal dengan nama Faza Meonk.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal3">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Buku 3 -->
+            <div class="modal fade" id="bookModal3" tabindex="-1" aria-labelledby="bookModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel1">Si Juki</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/siJuki.jpg" class="img-fluid" alt="Book Image">
+                            <h4>Deskripsi Buku</h4>
+                            <p>karakter komik karya Faza Ibnu Ubaidillah yang lebih dikenal dengan nama terkenal Faza Meonk. Kegelisahannya terhadap perkembangan karakter lokal yang dianggap kurang populer di masyarakat memotivasinya untuk mengembangkan si Juki agar dikenal oleh masyarakat luas.</p>
+                            <h5>Pengarang: Faza Ibnu Ubaidillah</h5>
+                            <h5>Penerbit: Bukune</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./img/onePiece.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">One Piece</h5>
+                        <p class="card-text">cerita tentang petualangan bajak laut mengelilingi dunia.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal4">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Buku 4 -->
+            <div class="modal fade" id="bookModal4" tabindex="-1" aria-labelledby="bookModalLabel4" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel1">One Piece</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/onePiece.jpg" class="img-fluid" alt="Book Image">
+                            <h4>Deskripsi Buku</h4>
+                            <p>bercerita tentang petualangan bajak laut Monkey D. Luffy dan kelompoknya, Bajak Laut Topi Jerami, dalam mencari harta karun terbesar di dunia yang disebut "One Piece".</p>
+                            <h5>Pengarang: Eiichiro Oda</h5>
+                            <h5>Penerbit: Shueisha</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./img/dilan.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dilan 1990</h5>
+                        <p class="card-text">kisah cinta dua remaja di Bandung pada tahun 1990-an.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal5">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Buku 5 -->
+            <div class="modal fade" id="bookModal5" tabindex="-1" aria-labelledby="bookModalLabel5" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel1">Dilan 1990</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/dilan.jpg" class="img-fluid" alt="Book Image">
+                            <h4>Deskripsi Buku</h4>
+                            <p>bercerita tentang Dilan, seorang siswa SMA yang jatuh cinta dengan Milea, siswi pindahan dari Jakarta.</p>
+                            <h5>Pengarang: Pidi Baiq</h5>
+                            <h5>Penerbit: Pastel Books (Mizan Group)</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./img/Ancika.jpg" class="card-img-top" alt="Book 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ancika, dia yang bersamaku tahun 1995</h5>
+                        <p class="card-text">menceritakan kisah asmara Dilan dan Ancika.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookModal6">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal for Buku 6 -->
+            <div class="modal fade" id="bookModal6" tabindex="-1" aria-labelledby="bookModalLabel6" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookModalLabel1">Ancika, dia yang bersamaku tahun 1995</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/Ancika.jpg" class="img-fluid" alt="Book Image">
+                            <h4>Deskripsi Buku</h4>
+                            <p>Deskripsi lengkap tentang buku 1. Buku ini membahas topik yang sangat menarik dan bermanfaat untuk pembaca yang ingin belajar lebih banyak mengenai ...</p>
+                            <h5>Pengarang: Pidi Baiq</h5>
+                            <h5>Penerbit: Pastel Books</h5>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="./daftar.html" class="nav-link active">1</a>
+                <a href="#" class="nav-link">2</a>
+                <a href="#" class="nav-link">3</a>
+                <a href="#" class="nav-link">4</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-4">
+        <div class="container-footer">
+            <p>&copy; 2025 Muhammad Daffa Ananda | All Rights Reserved</p>
+            <p>
+                <a href="https://www.facebook.com" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/* Start Daftar Buku Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Daftar Buku Section */
+.container {
+    margin-top: 40px;
+    padding: 0 15px; /* Tambahkan padding agar nyaman di layar kecil */
+}
+
+h1, p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem; /* Ukuran font default */
+}
+
+/* Form Transaksi Links */
+.form-transaksi a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-size: 1rem; /* Ukuran default teks */
+}
+
+.form-transaksi a:hover, a:focus {
+    text-decoration: underline; /* Menambahkan garis bawah saat tautan dihover atau difokuskan */
+    color: #007BFF; /* Mengubah warna teks saat hover */
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 0 10px; /* Kurangi padding untuk layar kecil */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Perkecil ukuran judul */
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1rem; /* Perkecil ukuran teks */
+        margin-bottom: 10px;
+    }
+
+    .form-transaksi a {
+        font-size: 0.9rem; /* Ukuran font lebih kecil untuk tautan */
+        text-align: center; /* Ratakan teks di tengah */
+        display: block; /* Pastikan tautan terpisah */
+        margin-bottom: 5px; /* Tambahkan jarak antar tautan */
+    }
+}
